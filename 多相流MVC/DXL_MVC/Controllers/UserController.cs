@@ -16,11 +16,7 @@ namespace DXL_MVC.Controllers
 
             ViewData["login_info"] = "";
 
-
-
-
-
-            return View();
+                       return View();
         }
 
         [HttpPost]
