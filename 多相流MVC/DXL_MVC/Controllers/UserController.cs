@@ -20,13 +20,6 @@ namespace DXL_MVC.Controllers
 
 
 
-
-
-
-
-
-
-
             return View();
         }
 
