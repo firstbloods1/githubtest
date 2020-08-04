@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @*<title>@ViewData["Title"] - DXL_MVC</title>*@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</head>
+<body>
+
+    <div class="jumbotron" style=" max-width:600px;margin-top:100px;MARGIN-RIGHT: auto; MARGIN-LEFT: auto;">
+        <h2 style="margin-left:28px;">欢迎登陆页面！</h2>
+        <br/>
+        <div class="container">
+
+            <form class="form-horizontal" role="form" asp-controller="User" asp-action="Login">
+                <div class="form-group">
+                    <label for="firstname" class="col-sm-2 control-label">用户名</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstname" placeholder="请输入用户名" name="usrname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-sm-2 control-label">密码</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="lastname" placeholder="请输入密码" name="usrpw">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">登录</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">@ViewData["login_info"]</span>
+                    </div>
+                </div>
+            </form>
+           
+        </div>
+    </div>
+</body>
+</html>
+
